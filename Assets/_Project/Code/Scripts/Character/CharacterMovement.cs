@@ -4,7 +4,7 @@ using VContainer;
 
 namespace Project.Scripts
 {
-    public class CharacterMovement : MonoBehaviour
+    public sealed class CharacterMovement : CharacterAction
     {
         [SerializeField] private CharacterController _characterController;
         [SerializeField] private Transform _body;
@@ -31,7 +31,7 @@ namespace Project.Scripts
             _animatorService = animatorService;
         }
         
-        public void Tick()
+        public override void Tick()
         {
             CalculateMoveDirection();
             Look();

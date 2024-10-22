@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Project.Scripts.UI.Views
 {
-    public class HealthBarView : BaseView
+    public sealed class HealthBarView : BaseView
     {
         public Transform playerTransform;
         public Camera mainCamera;

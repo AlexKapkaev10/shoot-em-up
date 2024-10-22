@@ -14,7 +14,7 @@ namespace Project.Scripts
             float value = default);
     }
     
-    public class CharacterAnimatorService : ICharacterAnimatorService
+    public sealed class CharacterAnimatorService : ICharacterAnimatorService
     {
         private readonly AnimationServiceConfig _config;
         private Animator _animator;

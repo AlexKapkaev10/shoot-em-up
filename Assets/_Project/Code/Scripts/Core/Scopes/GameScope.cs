@@ -6,7 +6,7 @@ using VContainer.Unity;
 
 namespace Project.Scripts.Core
 {
-    public class GameScope : LifetimeScope
+    public sealed class GameScope : LifetimeScope
     {
         [SerializeField] private CameraServiceConfig _cameraServiceConfig;
         [SerializeField] private FactoryConfig _factoryConfig;

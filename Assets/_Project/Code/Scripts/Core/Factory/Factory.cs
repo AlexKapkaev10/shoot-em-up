@@ -8,7 +8,7 @@ namespace Project.Scripts.Core
         
     }
     
-    public class Factory : IFactory
+    public sealed class Factory : IFactory
     {
         private readonly FactoryConfig _config;
         private readonly IObjectResolver _resolver;

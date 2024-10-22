@@ -11,7 +11,7 @@ namespace Project.Scripts.Health
         void UpdateSlider(float currentValue);
     }
     
-    public class HealthBar : MonoBehaviour, IHealthBar
+    public sealed class HealthBar : MonoBehaviour, IHealthBar
     {
         [SerializeField] private Image _bar;
         [SerializeField] private Image _imageSlider;

@@ -11,7 +11,7 @@ namespace Project.Scripts.Health
         void DisplayHealthBar(bool isVisible);
     }
     
-    public class HealthSystem : IHealthSystem
+    public sealed class HealthSystem : IHealthSystem
     {
         private readonly IHealthBar _healthBar;
         

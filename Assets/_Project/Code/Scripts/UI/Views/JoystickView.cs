@@ -4,7 +4,7 @@ using UnityEngine.InputSystem.OnScreen;
 
 namespace Project.Scripts.UI.Views
 {
-    public class JoystickView : BaseView
+    public sealed class JoystickView : BaseView
     {
         [SerializeField] private RectTransform _rectTransformJoystick;
         [SerializeField] private OnScreenStick _screenStick;

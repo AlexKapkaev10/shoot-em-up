@@ -11,11 +11,13 @@ namespace Project.Scripts
         bool IsDead { get; }
     }
     
-    public class Character : MonoBehaviour, ICharacter
+    public sealed class Character : MonoBehaviour, ICharacter
     {
         [SerializeField] private Animator _characterAnimator;
         
         [SerializeField] private CharacterMovement _characterMovement;
+
+        [SerializeField] private CharacterAction[] _characterActions;
 
         private CharacterConfig _config;
         private IHealthSystem _healthSystem;
@@ -45,6 +47,7 @@ namespace Project.Scripts
         private void OnEnable()
         {
             _healthSystem.Dead += OnDead;
+            StartCoroutine(HitAsync());
         }
 
         private void OnDisable()
@@ -59,7 +62,10 @@ namespace Project.Scripts
                 return;
             }
             
-            _characterMovement.Tick();
+            foreach (var action in _characterActions)
+            {
+                action.Tick();
+            }
         }
 
         public void HitDamage(float damage)

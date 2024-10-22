@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c1bfaf3aab64f448f6642a14b81f5d4, type: 3}
+  m_Name: ViewServiceConfig
+  m_EditorClassIdentifier: 
+  <DefaultViews>k__BackingField:
+  - Type: 0
+    ViewPrefab: {fileID: 7965666217114823239, guid: 5e389c87e6f49e6469ff908d93e84f76, type: 3}
+  <ViewParentPrefab>k__BackingField: {fileID: 8629846666810077438, guid: ce68f5374e8b0e548a5c191cac14c065, type: 3}

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3ed5f9dfb842ff99dac9d900994505, type: 3}
+  m_Name: CameraServiceConfig
+  m_EditorClassIdentifier: 
+  <CinemachineBrainPrefab>k__BackingField: {fileID: 857645201220824962, guid: 8284a759b15d52a4fa97e144dd7efe16, type: 3}
+  <UserCameraPrefab>k__BackingField: {fileID: 8236781067909277748, guid: 6bc4ac53df264e446a368576740571bb, type: 3}
